@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva - Servicio Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular - Servicio Social</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Semestre</th>
+        <th>Asignatura</th>
+        <th>Detalles</th>
+        <th>Promedio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí va el contenido de la tabla generado antes -->
+      <!-- Por simplicidad, insertamos una fila de ejemplo -->
+      <tr><td rowspan="1">1°</td><td>Introducción al Trabajo Social</td><td><button onclick="mostrarInfo('IntroTS')">Ver</button></td><td><input type="number" step="0.1" min="1" max="7"></td></tr>
+    </tbody>
+  </table>
+
+  <div id="modal" class="modal oculto">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <p id="info-asignatura"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
